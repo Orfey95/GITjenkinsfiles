@@ -34,7 +34,6 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh """
-                    docker tag toolbox:latest frolov/toolbox:latest
                     docker push frolov/toolbox:latest
                 """     
             }
